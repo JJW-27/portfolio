@@ -13,3 +13,8 @@
 header {
   height: 30px;
 }
+
+.App {
+  min-height: 100vh;
+  background-color: #E0EEEF;
+}

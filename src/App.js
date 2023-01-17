@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+import './css/App.css';
 import LandingPage from './components/LandingPage';
 import Sidebar from './components/Sidebar';
 import Timeline from './components/Timeline';

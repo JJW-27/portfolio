@@ -1,0 +1,17 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.fact {
+    align-self: center;
+}
