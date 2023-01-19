@@ -1,17 +1,48 @@
+.pointer-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 85px;
+  top: 45px;
+  font-size: 1rem;
+}
+
+.hand {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
 .landing-page {
-    display: flex;
-    flex-direction: column;
-   
-    
+  display: flex;
+  flex-direction: column;
 }
 
 .introduction {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  min-height: 150px;
 }
 
+.picture-card {
+  width: 40vw;
+  background-color: white;
+}
 
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin-left: 15px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-around;
+}
 
 .fact {
-    align-self: center;
+  align-self: center;
+  margin: 100px;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
 }

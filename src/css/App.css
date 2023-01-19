@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #page-wrap {
@@ -16,5 +16,5 @@ header {
 
 .App {
   min-height: 100vh;
-  background-color: #E0EEEF;
+  background-color: #e0eeef;
 }
