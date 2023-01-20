@@ -7,10 +7,8 @@ import 'react-vertical-timeline-component/style.min.css';
 import { SiJavascript as JavaScript } from 'react-icons/si';
 import { FaChessBishop as Bishop } from 'react-icons/fa';
 import { BsCalculator as Calculator } from 'react-icons/bs';
-
 import { ImLeaf as Leaf } from 'react-icons/im';
 import { BsThreeDots as Dots } from 'react-icons/bs';
-import PokeballIcon from '../assets/PokeballIcon';
 
 const Timeline = () => {
   return (
@@ -46,7 +44,7 @@ const Timeline = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="24th November 2022"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        iconStyle={{ background: '#fff', color: 'rgb(0,0,0)' }}
         icon={<Calculator />}
       >
         <h3 className="vertical-timeline-element-title">
@@ -61,11 +59,11 @@ const Timeline = () => {
         date="28th - 29th November 2022"
         iconStyle={
           {
-            // background:
-            //   'linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 47%, rgba(83,0,0,1) 50%, rgba(255,255,255,1) 53%)',
+            background:
+              'linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 47%, rgba(83,0,0,1) 50%, rgba(255,255,255,1) 53%)',
           }
         }
-        icon={<PokeballIcon />}
+        icon={''}
       >
         <h3 className="vertical-timeline-element-title">
           Data Visualisation React Mini-project
