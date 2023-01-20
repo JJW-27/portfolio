@@ -1,7 +1,6 @@
 import { getRandomFact } from '../api/api';
 import { useState, useEffect } from 'react';
 import '../css/LandingPage.css';
-import { Card } from '@mui/material';
 
 const LandingPage = () => {
   const [randomFact, setRandomFact] = useState({});
@@ -13,7 +12,7 @@ const LandingPage = () => {
   return (
     <>
       <div className="pointer-container">
-        <img className="hand" src={require('../assets/hand.png')} />
+        <img className="hand" alt="hand pointing left" src={require('../assets/hand.png')} />
         <p>
           <em>Get started here</em>
         </p>
