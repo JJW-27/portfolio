@@ -6,16 +6,12 @@ export default props => {
   return (
     <div className="sidebar">
       <Sidebar>
-        <Link to="/timeline">My coding journey</Link>
-        <a className="sidebar-option" href="/salads">
-          Option 2
-        </a>
-        <a className="sidebar-option" href="/pizzas">
-          Option 3
-        </a>
-        <a className="sidebar-option" href="/desserts">
-          Option 4
-        </a>
+        <Link className="sidebar-option" to="/">
+          About me
+        </Link>
+        <Link className="sidebar-option" to="/timeline">
+          My coding journey
+        </Link>
       </Sidebar>
     </div>
   );
