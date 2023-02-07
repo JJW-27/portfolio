@@ -17,4 +17,6 @@ header {
 .App {
   min-height: 100vh;
   background-color: #e0eeef;
+  padding-left: 20px;
+  padding-right: 20px;
 }

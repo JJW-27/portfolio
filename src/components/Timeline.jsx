@@ -39,6 +39,18 @@ const Timeline = () => {
           Created a board games review database and API using pSQL, Node.js and
           Express.js
         </p>
+        <p>
+          <a target="_blank" href="https://real-rose-worm-kit.cyclic.app/">
+            Hosted API
+          </a>{' '}
+          |{' '}
+          <a
+            target="_blank"
+            href="https://github.com/JJW-27/nc-games-backend-project"
+          >
+            GitHub
+          </a>
+        </p>
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
@@ -52,17 +64,20 @@ const Timeline = () => {
         </h3>
 
         <p>Created a basic calculator</p>
+        <p>
+          <a target="_blank" href="https://jjw27-calculator.netlify.app/">
+            Try it out
+          </a>
+        </p>
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
         date="28th - 29th November 2022"
-        iconStyle={
-          {
-            background:
-              'linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 47%, rgba(83,0,0,1) 50%, rgba(255,255,255,1) 53%)',
-          }
-        }
+        iconStyle={{
+          background:
+            'linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 47%, rgba(83,0,0,1) 50%, rgba(255,255,255,1) 53%)',
+        }}
         icon={''}
       >
         <h3 className="vertical-timeline-element-title">
@@ -71,6 +86,14 @@ const Timeline = () => {
         <p>
           Created a Pokemon stat comparison tool utilising PokeAPI and (insert
           name of google graph tool)
+        </p>
+        <p>
+          <a
+            target="_blank"
+            href="https://jjw27-pokemon-stats-comparison.netlify.app/"
+          >
+            Try it out
+          </a>
         </p>
       </VerticalTimelineElement>
 
@@ -84,6 +107,18 @@ const Timeline = () => {
         <p>
           Created a board games review website to consume the previously-built
           API
+        </p>
+        <p>
+          <a target="_blank" href="https://jjw-27-roundtable.netlify.app/">
+            Hosted website
+          </a>{' '}
+          |{' '}
+          <a
+            target="_blank"
+            href="https://github.com/JJW-27/nc-games-frontend-project"
+          >
+            GitHub
+          </a>
         </p>
       </VerticalTimelineElement>
 
@@ -103,6 +138,26 @@ const Timeline = () => {
         </h3>
 
         <p>Created a houseplant companion app in React Native</p>
+        <p><a target="_blank" href="https://youtu.be/9T_6O1HDiu8">
+            Video demo
+          </a>{' '}
+          |{' '}
+          <a
+            target="_blank"
+            href="https://github.com/fatfroggo/plantly-fe"
+          >
+            Github - front-end
+          </a>{' '}
+          |{' '}<a target="_blank" href="https://github.com/fatfroggo/plantly">
+          Github - back-end
+          </a>{' '}
+          |{' '}
+          <a
+            target="_blank"
+            href="https://plantly-api.onrender.com/api"
+          >
+            Hosted back-end
+          </a></p>
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
