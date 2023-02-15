@@ -3,31 +3,66 @@ import { useState, useEffect } from 'react';
 import '../css/LandingPage.css';
 
 const LandingPage = () => {
-  const [randomFact, setRandomFact] = useState({});
+  const [bubbleText, setBubbleText] = useState(
+    "Welcome to Joe's website! Hover over a tile and I'll tell you more about it!"
+  );
 
-  useEffect(() => {
-    getRandomFact().then(fact => setRandomFact(fact));
-  }, []);
+  document.addEventListener('mousemove', e => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    const anchor = document.getElementById('anchor');
+    const rect = anchor.getBoundingClientRect();
+
+    const anchorX = rect.left + rect.width / 2;
+    const anchorY = rect.top + rect.height / 2;
+
+    const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+
+    const eyes = document.querySelectorAll('.eye');
+    eyes.forEach(eye => {
+      eye.style.transform = `rotate(${120 + angleDeg}deg)`;
+    });
+  });
+
+  function angle(cx, cy, ex, ey) {
+    const dy = ey - cy;
+    const dx = ex - cx;
+    const rad = Math.atan2(dy, dx);
+    const deg = (rad * 180) / Math.PI;
+    return deg;
+  }
 
   return (
-    <>
-      <div className="pointer-container">
-        <img className="hand" alt="hand pointing left" src={require('../assets/hand.png')} />
-        <p>
-          <em>Get started here</em>
-        </p>
+    <main className="landing-page">
+      <div id="goat">
+        <img id="anchor" src={require('../assets/goat.png')} alt="goat" />
+
+        <img
+          class="eye"
+          src={require('../assets/eye.png')}
+          alt="eye"
+          style={{
+            bottom: '173px',
+            left: '97px',
+          }}
+        />
+        <img
+          class="eye"
+          src={require('../assets/eye.png')}
+          alt="eye"
+          style={{
+            bottom: '119px',
+            left: '157px',
+          }}
+        />
       </div>
-      <main className="landing-page">
-        <div className="introduction">
-          <div className="intro-text">
-            <p>Welcome to my portfolio!</p>
-            <p>Please enjoy a randomly generated fact!</p>
-          </div>
-          <div className="picture-card"></div>
+      <div id="speech-bubble-container">
+        <div class="bubble bubble-bottom-left">
+          <p id="bubble-text">{bubbleText}</p>
         </div>
-        <p className="fact">{randomFact.text}</p>
-      </main>
-    </>
+      </div>
+    </main>
   );
 };
 
