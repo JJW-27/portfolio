@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../css/LandingPage.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 
 const LandingPage = () => {
   const [bubbleText, setBubbleText] = useState(
@@ -34,6 +36,7 @@ const LandingPage = () => {
 
   return (
     <main className="landing-page">
+      <Carousel><div className='carousel-item'><p>1</p></div></Carousel>
       <div id="goat">
         <img id="anchor" src={require('../assets/goat.png')} alt="goat" />
 

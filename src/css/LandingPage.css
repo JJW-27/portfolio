@@ -5,6 +5,12 @@
   justify-content: center;
 }
 
+.carousel-item {
+  background-color: white;
+  height: 300px;
+  width: 600px;
+}
+
 #anchor {
   width: 350px;
   height: 400px;
