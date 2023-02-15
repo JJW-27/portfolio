@@ -1,9 +1,8 @@
 .landing-page {
   height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(4, 25%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #anchor {

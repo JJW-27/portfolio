@@ -1,10 +1,9 @@
-import { getRandomFact } from '../api/api';
 import { useState, useEffect } from 'react';
 import '../css/LandingPage.css';
 
 const LandingPage = () => {
   const [bubbleText, setBubbleText] = useState(
-    "Welcome to Joe's website! Hover over a tile and I'll tell you more about it!"
+    "Welcome to Joe's website! Get started by clicking the left or right arrows above!"
   );
 
   document.addEventListener('mousemove', e => {
