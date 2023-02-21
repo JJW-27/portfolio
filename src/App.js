@@ -3,7 +3,7 @@ import './css/App.css';
 import LandingPage from './components/LandingPage';
 import Sidebar from './components/Sidebar';
 import Timeline from './components/Timeline';
-import SimpsonsMatchingGame from './components/SimpsonsMatchingGame';
+import SimpsonsMatchingGame from './components/Simpsons_Matching_Game/SimpsonsMatchingGame';
 
 function App() {
   return (
