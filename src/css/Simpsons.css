@@ -12,6 +12,7 @@
 .speech-bubble {
   background-color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 70px;
@@ -27,11 +28,13 @@
   right: 50%;
   width: auto;
   height: 1800px;
+  pointer-events: none;
 }
 
 .text {
   font-size: 2rem;
   text-align: center;
+  margin: 8px;
 }
 
 .board {
@@ -47,19 +50,64 @@
   padding: 20px;
 }
 
-.card {
+.not-flipped {
   display: flex;
+  flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: white;
   border-radius: 10px;
   border: 2px solid black;
+  height: 100%;
+  width: 100%;
 }
 
-.card-image {
+.flipped {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 100%;
+  width: 100%;
+}
+
+.front {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
   max-height: 80%;
   max-width: 80%;
+}
+
+.back {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  max-height: 80%;
+  max-width: 80%;
+}
+
+.not-flipped .front {
+  transform: rotateY(90deg);
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+}
+
+.not-flipped .back {
+  transform: rotateY(0deg);
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
 }
 
 @media only screen and (max-width: 800px) {

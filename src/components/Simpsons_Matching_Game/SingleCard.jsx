@@ -1,4 +1,4 @@
-const SingleCard = ({ card }) => {
+const SingleCard = ({ card, handleChoice, flipped }) => {
   let cardColour;
   if (card.src === 'img/santas_little_helper.png') {
     cardColour = 'yellow';
@@ -18,9 +18,25 @@ const SingleCard = ({ card }) => {
     cardColour = 'blue';
   }
 
+  const handleClick = () => {
+    handleChoice(card);
+  };
+
   return (
-    <div className="card" style={{ backgroundColor: cardColour }}>
-      <img className="card-image" src={card.src} alt="card image" />
+    <div
+      className={flipped ? 'flipped' : 'not-flipped'}
+      style={
+        flipped ? { backgroundColor: cardColour } : { backgroundColor: 'white' }
+      }
+    >
+      <img className="front" src={card.src} />
+
+      <img
+        onClick={handleClick}
+        className="back"
+        src="img/simpsons_logo.png"
+        alt="card image"
+      />
     </div>
   );
 };
