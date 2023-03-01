@@ -1,5 +1,6 @@
 import '../css/LandingPage.css';
 import { useEffect, useState } from 'react';
+import AnimalBackground from './AnimalBackground';
 
 const animalBackgrounds = ['lion.jpg', 'swan.jpg'];
 
@@ -19,11 +20,7 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page">
-      <img
-        className="dynamic-background"
-        src={`/backgrounds/${animalBackgrounds[backgroundIndex]}`}
-        alt=""
-      />
+      <AnimalBackground backgroundIndex={backgroundIndex} animalBackgrounds={animalBackgrounds}/>
     </div>
   );
 };
