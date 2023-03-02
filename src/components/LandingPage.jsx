@@ -28,12 +28,14 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page">
-      <p style={{ color: 'white', zIndex: 3 }}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eius
-        voluptatum veritatis at error quam obcaecati magnam nam sed consectetur
-        quos voluptate, quisquam corrupti unde dolore a consequatur maiores
-        recusandae!
-      </p>
+      <div className="landing-text-container">
+        <p className="landing-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eius
+          voluptatum veritatis at error quam obcaecati magnam nam sed
+          consectetur quos voluptate, quisquam corrupti unde dolore a
+          consequatur maiores recusandae!
+        </p>
+      </div>
       <AnimalBackground
         backgroundIndex={backgroundIndex}
         animalBackgrounds={animalBackgrounds}
