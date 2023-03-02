@@ -8,8 +8,8 @@ const animalBackgrounds = [
   'iguana.jpg',
   'owl.jpg',
   'fish.jpg',
-  'snake.jpg',
-  'wasp.jpg',
+  'tiger.jpg',
+  'chimpanzee.jpg',
 ];
 
 const LandingPage = () => {
@@ -32,8 +32,7 @@ const LandingPage = () => {
         <p className="landing-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eius
           voluptatum veritatis at error quam obcaecati magnam nam sed
-          consectetur quos voluptate, quisquam corrupti unde dolore a
-          consequatur maiores recusandae!
+          consectetur quos voluptate.
         </p>
       </div>
       <AnimalBackground
