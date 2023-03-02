@@ -9,6 +9,7 @@ import LandingPage from './components/LandingPage';
 function App() {
   return (
     <div className="App">
+       <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/temp" element={<LandingPage />} />
