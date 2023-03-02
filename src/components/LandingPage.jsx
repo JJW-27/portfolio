@@ -2,7 +2,15 @@ import '../css/LandingPage.css';
 import { useEffect, useState } from 'react';
 import AnimalBackground from './AnimalBackground';
 
-const animalBackgrounds = ['lion.jpg', 'swan.jpg'];
+const animalBackgrounds = [
+  'lion.jpg',
+  'swan.jpg',
+  'iguana.jpg',
+  'owl.jpg',
+  'fish.jpg',
+  'snake.jpg',
+  'wasp.jpg',
+];
 
 const LandingPage = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
@@ -14,13 +22,22 @@ const LandingPage = () => {
       } else {
         setBackgroundIndex(0);
       }
-    }, 30000);
+    }, 20000);
     return () => clearInterval(interval);
   }, [backgroundIndex]);
 
   return (
     <div className="landing-page">
-      <AnimalBackground backgroundIndex={backgroundIndex} animalBackgrounds={animalBackgrounds}/>
+      <p style={{ color: 'white', zIndex: 3 }}>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eius
+        voluptatum veritatis at error quam obcaecati magnam nam sed consectetur
+        quos voluptate, quisquam corrupti unde dolore a consequatur maiores
+        recusandae!
+      </p>
+      <AnimalBackground
+        backgroundIndex={backgroundIndex}
+        animalBackgrounds={animalBackgrounds}
+      />
     </div>
   );
 };

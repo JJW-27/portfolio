@@ -4,21 +4,27 @@
   background-color: black;
 }
 
+.background-container {
+  position: absolute;
+}
+
 .background-cover {
   background-color: black;
   height: 100vh;
   width: 100vw;
   position: relative;
   z-index: 2;
-  animation: fade 30s;
+  animation: fade 20s;
 }
 
 .dynamic-background {
-  min-height: 100vh;
-  min-width: 100%;
+  height: auto;
+  max-height: 1500px;
+  max-width: 90vw;
+  min-width:1000px;
   position: fixed;
-  top: 10%;
-  left: 10%;
+  bottom: -20vh;
+  right: -10vw;
   z-index: 1;
 }
 
@@ -26,10 +32,10 @@
   0% {
     opacity: 1;
   }
-  10% {
+  20% {
     opacity: 0;
   }
-  90% {
+  80% {
     opacity: 0;
   }
   100% {
